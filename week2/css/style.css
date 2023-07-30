@@ -30,9 +30,13 @@
   font-size: 25px;
   cursor: pointer;
   margin: 10px;
-  color: pink;
+  color: rgb(255, 124, 153);
+  cursor: pointer;
 }
 
+.calculator input:hover {
+  background-color: beige;
+}
 .calculator input:active {
   background-color: white;
 }
@@ -58,7 +62,7 @@
 .calculator input.zero {
   width: 144px;
 }
-
+/* 
 .calculator input.active {
   box-shadow: 0px 0px 10px black;
-}
+} */
