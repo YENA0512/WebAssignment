@@ -76,7 +76,7 @@
   text-align: center;
 }
 
-.clock-container {
+#clock-container {
   height: 100%;
 }
 
@@ -87,4 +87,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#battery-background {
+  position: relative;
+  right: 0px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  border-radius: 10px;
+}
+#battery {
+  position: relative;
+  z-index: 1;
+  left: 100px;
+  width: 100px;
+  height: 30px;
+  background-color: greenyellow;
+  border-radius: 10px;
 }

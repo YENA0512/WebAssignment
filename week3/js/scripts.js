@@ -85,6 +85,27 @@ function submitalarm() {
   }
 }
 
+function batteryCharge() {
+  var batteryWidth = document.getElementById("battery");
+  var clockContainer = document.getElementById("clock");
+  var maxwidth = 5;
+  console.log(clockContainer);
+  widthPerSec = setInterval(() => {
+    if (maxwidth <= 0) {
+      clearInterval();
+      if (maxwidth == 0) {
+        clockContainer.style.backgroundColor = "black";
+        clockContainer.style.color = "black";
+      }
+    } else {
+      maxwidth -= 1;
+      console.log(maxwidth);
+      batteryWidth.style.width = maxwidth + "px";
+      console.log(batteryWidth.style.width);
+    }
+  }, 1000);
+}
 clock();
 setInterval(clock, 1000);
 inputAlarm();
+batteryCharge();
