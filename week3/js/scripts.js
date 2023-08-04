@@ -88,8 +88,8 @@ function submitalarm() {
 function batteryCharge() {
   var batteryWidth = document.getElementById("battery");
   var clockContainer = document.getElementById("clock");
-  var maxwidth = 5;
-  console.log(clockContainer);
+  var maxwidth = 100;
+
   widthPerSec = setInterval(() => {
     if (maxwidth <= 0) {
       clearInterval();
@@ -99,9 +99,7 @@ function batteryCharge() {
       }
     } else {
       maxwidth -= 1;
-      console.log(maxwidth);
       batteryWidth.style.width = maxwidth + "px";
-      console.log(batteryWidth.style.width);
     }
   }, 1000);
 }
