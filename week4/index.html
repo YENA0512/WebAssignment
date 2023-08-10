@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week4</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./register.html">회원가입</a></li>
+        <li><a href="./">TodoList</a></li>
+        <li><a href="./register.html">DOCS</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <header>TodoList</header>
+      <div class="inputField">
+        <input type="text" id="addValue" placeholder="할 일 추가하기" />
+        <button type="button" id="btn" onclick="addTodo()">추가</button>
+      </div>
+      <div>
+        <ul id="addTodo" class="Todolist">
+          <li><div id="result"></div></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <button type="button" id="allClear" onclick="allClearList()">
+          모두 삭제
+        </button>
+      </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
