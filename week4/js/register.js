@@ -22,7 +22,7 @@ function validateEmail(email) {
 function handleSubmit(e) {
   e.preventDefault();
 
-  var data = [
+  const data = [
     ["1234@abc.com", "1234"],
     ["abc@abc.com", "12345"],
   ];
